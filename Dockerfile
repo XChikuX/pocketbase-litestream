@@ -1,9 +1,9 @@
 # syntax=docker/dockerfile:1
-# MAINTAINER "Brian Scott <dev@bscott.mozmail.com>"
+# MAINTAINER "Ju Li <ju.li@stern.nyu.edu>"
 
-FROM alpine:3.6
+FROM alpine:latest
 
-ARG POCKETBASE_VERSION=v0.18.6
+ARG POCKETBASE_VERSION=v0.22.14
 
 # Install the dependencies
 RUN apk add --no-cache \
