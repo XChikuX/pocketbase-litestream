@@ -3,7 +3,7 @@
 
 FROM alpine:latest
 
-ARG POCKETBASE_VERSION=v0.22.14
+ARG POCKETBASE_VERSION=0.22.14
 
 # Install the dependencies
 RUN apk add --no-cache \
@@ -25,7 +25,7 @@ RUN chmod +x /usr/local/bin/pocketbase
 # This is done in the builder and copied as the chmod doubles the size.
 # Note: You will want to mount your own Litestream configuration file at /etc/litestream.yml in the container.
 # Example: https://github.com/benbjohnson/litestream-docker-example or https://litestream.io/guides/docker/
-ADD https://github.com/benbjohnson/litestream/releases/download/v0.3.8/litestream-v0.3.8-linux-amd64-static.tar.gz /tmp/litestream.tar.gz
+ADD https://github.com/benbjohnson/litestream/releases/download/v0.3.13/litestream-v0.3.13-linux-amd64.tar.gz /tmp/litestream.tar.gz
 RUN tar -C /usr/local/bin -xzf /tmp/litestream.tar.gz
 
 # Notify Docker that the container wants to expose a port.

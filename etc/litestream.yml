@@ -1,4 +1,10 @@
 dbs:
   - path: /pb_data/data.db
     replicas:
-      - url: ${REPLICA_URL}
+      - type: s3
+        bucket: ${REPLICA_BUCKET}
+        endpoint: ${REPLICA_ENDPOINT}
+        region: ${REPLICA_REGION}
+        skip-verify: true
+        access-key-id: ${LITESTREAM_ACCESS_KEY_ID}
+        secret-access-key: ${LITESTREAM_SECRET_ACCESS_KEY}
