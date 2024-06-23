@@ -1,3 +1,5 @@
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/s9RV_t?referralCode=HxrUPo)
+
 ## Prerequisites
 
 To test this locally, you'll need to have an S3-compatible store to connect to. Please see the Litestream Guides to get set up on your preferred object store.
