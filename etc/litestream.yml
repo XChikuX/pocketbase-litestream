@@ -1,5 +1,5 @@
 dbs:
-  - path: /pb_data/data.db
+  - path: /pb/pb_data/data.db
     replicas:
       - type: s3
         bucket: ${REPLICA_BUCKET}
